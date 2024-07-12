@@ -9,13 +9,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier # Library for Random Forest Classification Model
 from sklearn.metrics import accuracy_score          # Library for accuracy metrics
-
+from sklearn.preprocessing import LabelEncoder      # Library for label encoding
+import joblib  # label encoder
+# Save the LabelEncoder
 # Load the dataset
 fish_data = pd.read_csv('Fish.csv')
 
 # Encode the target variable
 le = LabelEncoder()
 fish_data['Species'] = le.fit_transform(fish_data['Species'])
+
+# Save the LabelEncoder
+joblib.dump(le, 'label_encoder.pkl')
 
 # Split the data
 X = fish_data.drop('Species', axis=1)
