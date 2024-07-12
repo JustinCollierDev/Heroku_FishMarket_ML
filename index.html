@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Species Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fish Species Prediction</h1>
+    <form action="/predict" method="post">
+        <input type="text" name="Weight" placeholder="Weight of fish in grams" required>
+        <input type="text" name="Vertical Length" placeholder="Vertical length in CM" required>
+        <input type="text" name="Diagonal Length" placeholder="Diagonal length in CM" required>
+        <input type="text" name="Cross Length" placeholder="Cross length in CM" required>
+        <input type="text" name="Height" placeholder="Height in CM" required>
+        <input type="text" name="Width" placeholder="Width in CM" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
