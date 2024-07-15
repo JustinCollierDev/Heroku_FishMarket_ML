@@ -32,3 +32,8 @@ Data Sources/References: https://www.kaggle.com/aungpyaeap/fish-market
 + Added a templates folder for our index.html
 + Built the app.py and gave it routes for handling the home page form & prediction output
 + Modified fish_classification.py to use a label encoder
+
++ ### July, 15. 2024 - Justin
+### Heroku - Deploying our Web App
++ Added a Procfile
++ Added a 'requirements.txt' that has all of our dependencies in it.
