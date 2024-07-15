@@ -1,3 +1,0 @@
-[build-system]
-requires = ["six>=1.5","setuptools>=67.6.1", "wheel>=0.40.0", "numpy>=1.21.0"]
-build-backend = "setuptools.build_meta"
