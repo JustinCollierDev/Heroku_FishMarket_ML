@@ -1,4 +1,4 @@
-setuptools>=65.5.1
+setuptools==58.0.4
 six>=1.16.0
 numpy==1.21.0
 Flask==2.0.2
